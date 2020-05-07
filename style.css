@@ -1,10 +1,69 @@
 body {
     font-family: 'Karla', sans-serif;
+    font-size: 16px;
 }
 
 h1,h2,h3 {
     font-family: 'DM Serif Display', serif;
 }
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES------------------------------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(273, 4%, 51%);
+    font-weight: 700;
+    padding: 12px 30px;
+}
+
+header nav a:hover {
+    color: hsl(256, 26%, 20%);
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li:hover {
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+}
+
+.menu-highlight {
+    border: 1.5px solid hsl(256, 26%, 20%);
+    color:hsl(256, 26%, 20%);
+}
+
+.menu-highlight:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: #ffffff;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+#menu-mobile-items {
+    display: none;
+}
+
+/* FOOTER STYLES------------------------------------------------ */
 
 .attribution { 
     font-size: 11px; 
@@ -12,4 +71,27 @@ h1,h2,h3 {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 375px) 
+{
+
+    .container {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 900px)
+{
+    #menu {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+
 }
