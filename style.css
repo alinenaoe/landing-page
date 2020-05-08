@@ -1,15 +1,28 @@
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 h1,h2,h3 {
     font-family: 'DM Serif Display', serif;
 }
 
+p {
+    line-height: 1.7rem;
+}
+
 .container {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+}
+
+.btn-action {
+    color:hsl(256, 26%, 20%);
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
 }
 
 /* HEADER STYLES------------------------------------------------ */
@@ -26,7 +39,7 @@ header nav a {
     text-transform: uppercase;
     color: hsl(273, 4%, 51%);
     font-weight: 700;
-    padding: 12px 30px;
+    padding: 12px 20px;
 }
 
 header nav a:hover {
@@ -61,6 +74,67 @@ header ul li:hover {
 
 #menu-mobile-items {
     display: none;
+}
+
+/* INTRO STYLES------------------------------------------------ */
+
+#intro {
+    background-color: hsl(256, 26%, 20%);
+    height: 85vh;
+}
+
+.two-col {
+    display: flex;
+    padding-top: 7%;
+    align-items: flex-start;
+}
+
+.col {
+    width: 50%;
+    position: relative;
+}
+
+.col img {
+    width: 100%;
+}
+
+.col-left {
+    padding-right: 85px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.border-top {
+    border-top: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+    width: 23%;
+}
+
+#intro p {
+    color: #ffffff;
+}
+
+.btn-dark {
+    background-color: hsl(256, 26%, 20%);
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #ffffff;
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+#intro .btn-dark {
+    margin-top: 20px;
 }
 
 /* FOOTER STYLES------------------------------------------------ */
