@@ -173,6 +173,29 @@ h1 {
     color: hsl(273, 4%, 51%);
 }
 
+/* BANNER STYLES------------------------------------------------ */
+
+#how-we-work {
+    margin: 100px 0;
+}
+
+#banner-how-we-work {
+    background-color:hsl(256, 26%, 20%);
+}
+
+#how-we-work h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#how-we-work .two-col {
+    justify-content: space-between;
+    padding-top: 0;
+    align-items: center;
+    padding: 30px 90px;
+}
 
 /* FOOTER STYLES------------------------------------------------ */
 
